@@ -644,3 +644,13 @@ class Idioma {
 document.addEventListener("DOMContentLoaded", () => {
   new Idioma(traducoes).iniciar();
 });
+
+const btnMotion = document.querySelector('#btnMotion'); // use o id real do seu botão
+btnMotion.addEventListener('click', () => {
+  const ativo = document.body.classList.toggle('reduce-motion');
+  btnMotion.setAttribute('aria-pressed', ativo);
+});
+
+document.querySelector('#btnVlibras').addEventListener('click', () => {
+  document.querySelector('[vw-access-button]').click();
+});

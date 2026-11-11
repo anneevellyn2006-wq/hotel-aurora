@@ -229,3 +229,11 @@ h2 em { color: var(--gold-dark); font-weight: 400; }
     cursor: pointer;
     font-family: inherit;
 }
+
+.reduce-motion *,
+.reduce-motion *::before,
+.reduce-motion *::after {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+}
